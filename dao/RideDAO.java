@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 💾 DAO for rides table — handles DB operations.
+ *  DAO for rides table — handles DB operations.
  */
 public class RideDAO {
 
-    // ✅ Create new ride with duplicate prevention
+    //  Create new ride with duplicate prevention
     public boolean createRide(Ride ride) throws SQLException {
         Connection conn = DBConnection.getConnection();
 
@@ -44,7 +44,7 @@ public class RideDAO {
         }
     }
 
-    // ✅ Retrieve all rides
+    // Retrieve all rides
     public List<Ride> findAllOpenRides() throws SQLException {
         List<Ride> rides = new ArrayList<>();
         Connection conn = DBConnection.getConnection();
@@ -98,7 +98,7 @@ public class RideDAO {
                 }
             }
         }
-        return null; // not found
+        return null; 
     }
 
 

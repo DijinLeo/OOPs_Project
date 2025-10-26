@@ -55,7 +55,7 @@ public class DriverApplicationDAO {
                 list.add(da);
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error fetching all applications: " + e.getMessage());
+            System.err.println(" Error fetching all applications: " + e.getMessage());
         }
         return list;
     }
@@ -81,7 +81,7 @@ public class DriverApplicationDAO {
                 list.add(da);
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error fetching by status: " + e.getMessage());
+            System.err.println(" Error fetching by status: " + e.getMessage());
         }
         return list;
     }
@@ -106,7 +106,7 @@ public class DriverApplicationDAO {
                 return da;
             }
         } catch (SQLException e) {
-            System.err.println("❌ Error fetching application by ID: " + e.getMessage());
+            System.err.println(" Error fetching application by ID: " + e.getMessage());
         }
         return null;
     }
@@ -122,7 +122,7 @@ public class DriverApplicationDAO {
             int rows = ps.executeUpdate();
             return rows > 0;
         } catch (SQLException e) {
-            System.err.println("❌ Error updating driver status: " + e.getMessage());
+            System.err.println(" Error updating driver status: " + e.getMessage());
             return false;
         }
     }

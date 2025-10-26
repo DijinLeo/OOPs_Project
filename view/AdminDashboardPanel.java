@@ -51,10 +51,10 @@ public class AdminDashboardPanel extends JPanel {
 
         JPanel filterPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         filterPanel.setBackground(Color.WHITE);
-        JButton allBtn = UIStyleHelper.styleButton(new JButton("🌍 All"), new Color(100, 149, 237));
-        JButton approvedBtn = UIStyleHelper.styleButton(new JButton("🟢 Approved"), new Color(46, 204, 113));
-        JButton pendingBtn = UIStyleHelper.styleButton(new JButton("🟡 Pending"), new Color(241, 196, 15));
-        JButton rejectedBtn = UIStyleHelper.styleButton(new JButton("🔴 Rejected"), new Color(231, 76, 60));
+        JButton allBtn = UIStyleHelper.styleButton(new JButton(" All"), new Color(100, 149, 237));
+        JButton approvedBtn = UIStyleHelper.styleButton(new JButton(" Approved"), new Color(46, 204, 113));
+        JButton pendingBtn = UIStyleHelper.styleButton(new JButton(" Pending"), new Color(241, 196, 15));
+        JButton rejectedBtn = UIStyleHelper.styleButton(new JButton(" Rejected"), new Color(231, 76, 60));
 
         allBtn.addActionListener(e -> { currentAppFilter = "all"; refreshApplicationsList(); });
         approvedBtn.addActionListener(e -> { currentAppFilter = "approved"; refreshApplicationsList(); });
@@ -160,12 +160,12 @@ public class AdminDashboardPanel extends JPanel {
         JButton rejectBtn = UIStyleHelper.styleButton(new JButton("Reject"), Color.RED);
 
         if (status.equals("approved")) {
-            JButton changeReject = UIStyleHelper.styleButton(new JButton("↩️ Change to Reject"), new Color(255, 77, 77));
+            JButton changeReject = UIStyleHelper.styleButton(new JButton("Change to Reject"), new Color(255, 77, 77));
             changeReject.addActionListener(e -> updateStatus(da.getId(), "rejected"));
             btnPanel.add(changeReject);
 
         } else if (status.equals("rejected")) {
-            JButton changeApprove = UIStyleHelper.styleButton(new JButton("↩️ Change to Approve"), new Color(88, 214, 141));
+            JButton changeApprove = UIStyleHelper.styleButton(new JButton("Change to Approve"), new Color(88, 214, 141));
             changeApprove.addActionListener(e -> updateStatus(da.getId(), "approved"));
             btnPanel.add(changeApprove);
 
@@ -214,10 +214,10 @@ public class AdminDashboardPanel extends JPanel {
 
         JPanel filterPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         filterPanel.setBackground(Color.WHITE);
-        JButton allBtn = UIStyleHelper.styleButton(new JButton("🌍 All"), new Color(100, 149, 237));
-        JButton riderBtn = UIStyleHelper.styleButton(new JButton("🧍 Rider"), new Color(52, 152, 219));
-        JButton driverBtn = UIStyleHelper.styleButton(new JButton("🚘 Driver"), new Color(46, 204, 113));
-        JButton adminBtn = UIStyleHelper.styleButton(new JButton("👑 Admin"), new Color(155, 89, 182));
+        JButton allBtn = UIStyleHelper.styleButton(new JButton(" All"), new Color(100, 149, 237));
+        JButton riderBtn = UIStyleHelper.styleButton(new JButton(" Rider"), new Color(52, 152, 219));
+        JButton driverBtn = UIStyleHelper.styleButton(new JButton(" Driver"), new Color(46, 204, 113));
+        JButton adminBtn = UIStyleHelper.styleButton(new JButton(" Admin"), new Color(155, 89, 182));
 
         allBtn.addActionListener(e -> { currentUserRoleFilter = "all"; refreshUsersList(); });
         riderBtn.addActionListener(e -> { currentUserRoleFilter = "rider"; refreshUsersList(); });
@@ -297,10 +297,10 @@ public class AdminDashboardPanel extends JPanel {
 
         JPanel filterPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         filterPanel.setBackground(Color.WHITE);
-        JButton allBtn = UIStyleHelper.styleButton(new JButton("🌍 All"), new Color(100, 149, 237));
-        JButton openBtn = UIStyleHelper.styleButton(new JButton("🟢 Open"), new Color(46, 204, 113));
-        JButton doneBtn = UIStyleHelper.styleButton(new JButton("🔵 Completed"), new Color(52, 152, 219));
-        JButton cancelledBtn = UIStyleHelper.styleButton(new JButton("🔴 Cancelled"), new Color(231, 76, 60));
+        JButton allBtn = UIStyleHelper.styleButton(new JButton(" All"), new Color(100, 149, 237));
+        JButton openBtn = UIStyleHelper.styleButton(new JButton(" Open"), new Color(46, 204, 113));
+        JButton doneBtn = UIStyleHelper.styleButton(new JButton(" Completed"), new Color(52, 152, 219));
+        JButton cancelledBtn = UIStyleHelper.styleButton(new JButton(" Cancelled"), new Color(231, 76, 60));
 
         allBtn.addActionListener(e -> { currentRideStatusFilter = "all"; refreshRidesList(); });
         openBtn.addActionListener(e -> { currentRideStatusFilter = "open"; refreshRidesList(); });

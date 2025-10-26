@@ -11,7 +11,7 @@ public class DriverApplication {
     // Default constructor (needed for DAO use)
     public DriverApplication() {}
 
-    // ✅ Full constructor (matches what you use in DriverApplicationPanel)
+    //  Full constructor (matches what you use in DriverApplicationPanel)
     public DriverApplication(String id, String name, String vehicleModel,
                              String licenseNumber, String licenseFile, String status) {
         this.id = id;

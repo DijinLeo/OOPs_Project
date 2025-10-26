@@ -5,7 +5,7 @@ import model.DriverApplication;
 import java.sql.SQLException;
 
 /**
- * Controller that handles driver application logic.
+  Controller that handles driver application logic.
  * Acts as the bridge between the DAO and UI.
  */
 public class DriverApplicationController {

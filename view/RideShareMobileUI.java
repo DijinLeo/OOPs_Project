@@ -19,7 +19,7 @@ import view.ProviderTripsPanel;
 import view.NavigationBarPanel;
 
 /**
- * 🧭 Main UI Frame for Campus RideShare MVC
+ * Main UI Frame for Campus RideShare MVC
  * Handles navigation, login/logout states, and dynamic navbar greetings.
  */
 public class RideShareMobileUI extends JFrame {
@@ -30,7 +30,7 @@ public class RideShareMobileUI extends JFrame {
     private String currentScreen = "login";
     private String currentUserId;
     private String currentUserRole;
-    private String currentUsername;  // ✅ New field
+    private String currentUsername;  
     private boolean loggedIn = false;
 
     private final Stack<String> screenHistory = new Stack<>();

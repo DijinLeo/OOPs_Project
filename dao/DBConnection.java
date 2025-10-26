@@ -20,7 +20,7 @@ public class DBConnection {
                
 
             } catch (ClassNotFoundException e) {
-                System.err.println("❌ JDBC Driver not found: " + e.getMessage());
+                System.err.println(" JDBC Driver not found: " + e.getMessage());
             }
         }
         return connection;
